@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Poppy Playtime - All Trailers</title>
+
+<link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#0b0000;
+    color:white;
+    text-align:center;
+}
+
+/* Header */
+header{
+    background:#111;
+    padding:20px;
+    border-bottom:3px solid crimson;
+}
+
+header h1{
+    color:crimson;
+    margin:0;
+}
+
+/* Trailer Section */
+.section{
+    padding:40px 20px;
+}
+
+.section h2{
+    margin-bottom:15px;
+}
+
+/* Video Styling */
+video{
+    width:90%;
+    max-width:800px;
+    border-radius:15px;
+    box-shadow:0 0 25px rgba(255,0,0,0.5);
+    transition:0.3s;
+}
+
+video:hover{
+    box-shadow:0 0 40px crimson;
+}
+
+/* ?? Chapter 5 Special Glow */
+.chapter5 video{
+    border:2px solid crimson;
+    box-shadow:0 0 25px crimson,
+               0 0 50px red,
+               0 0 80px darkred;
+    animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+    from{
+        box-shadow:0 0 25px crimson, 0 0 50px red;
+    }
+    to{
+        box-shadow:0 0 40px red, 0 0 80px crimson;
+    }
+}
+
+/* Back Button */
+.back-btn{
+    display:inline-block;
+    margin:40px;
+    padding:15px 30px;
+    background:crimson;
+    color:white;
+    text-decoration:none;
+    border-radius:40px;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.back-btn:hover{
+    background:darkred;
+    transform:scale(1.1);
+}
+
+/* Footer */
+footer{
+    padding:20px;
+    background:#111;
+    border-top:3px solid crimson;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>All Chapter Trailers</h1>
+</header>
+
+<!-- Chapter 1 -->
+<div class="section">
+    <h2>Chapter 1</h2>
+    <video controls>
+        <source src="videos/chapter1.mp4" type="video/mp4">
+    </video>
+</div>
+
+<!-- Chapter 2 -->
+<div class="section">
+    <h2>Chapter 2</h2>
+    <video controls>
+        <source src="videos/chapter2.mp4" type="video/mp4">
+    </video>
+</div>
+
+<!-- Chapter 3 -->
+<div class="section">
+    <h2>Chapter 3</h2>
+    <video controls>
+        <source src="videos/chapter3.mp4" type="video/mp4">
+    </video>
+</div>
+
+<!-- Chapter 4 -->
+<div class="section">
+    <h2>Chapter 4</h2>
+    <video controls>
+        <source src="videos/chapter4.mp4" type="video/mp4">
+    </video>
+</div>
+
+<!-- ?? Chapter 5 Special -->
+<div class="section chapter5">
+    <h2>Chapter 5 - Broken Things</h2>
+    <video controls>
+        <source src="videos/chapter5.mp4" type="video/mp4">
+    </video>
+</div>
+
+<a href="index.html" class="back-btn">
+&larr; Back To Home
+</a>
+
+<footer>
+    &copy; 2026 Poppy Playtime (Fan Website). All Rights Reserved.
+</footer>
+
+</body>
+</html>
